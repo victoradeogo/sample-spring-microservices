@@ -1,4 +1,4 @@
-FROM openjdk
+FROM alpine:3.14
 MAINTAINER Piotr Minkowski <piotr.minkowski@gmail.com>
 ADD target/account-service.jar account-service.jar
 ENTRYPOINT ["java", "-jar", "/account-service.jar"]
